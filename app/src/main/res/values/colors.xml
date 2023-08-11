@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+
+<!--
+Transparent colors are useful when you want to overlay text or icons on top of an image.
+-->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#E6000000</color>
+    <color name="transparent_white">#E6FFFFFF</color>
+    <color name="transparent_white_2">#66FFFFFF</color>
+
+
+<!--    RED -->
+    <color name="red_500">#FF0000</color>
+
+<!--    BLUE -->
+    <color name="blue_500">#E63498EC</color>
+
+<!--    4CFFBF -->
+    <color name="todo_background">#03A9F4</color>
+
+</resources>

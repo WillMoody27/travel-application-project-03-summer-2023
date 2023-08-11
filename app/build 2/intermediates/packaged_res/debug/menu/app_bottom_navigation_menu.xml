@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/app_map"
+        android:icon="@drawable/search"
+        android:title="Search" />
+    <item
+        android:id="@+id/app_explore"
+        android:icon="@drawable/pinpoint"
+        android:title="Explore" />
+    <item
+        android:id="@+id/app_saved"
+        android:icon="@drawable/saved"
+        android:title="Saved" />
+    <item
+        android:id="@+id/app_account"
+        android:icon="@drawable/account"
+        android:title="Account" />
+</menu>

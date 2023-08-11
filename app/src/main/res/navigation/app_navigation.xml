@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/app_map">
+    <fragment
+        android:id="@+id/app_map"
+        android:name="edu.msudenver.cs3013.project03.fragments.MapsFragment"
+        android:label="TRVL | Explore"
+        tools:layout="@layout/fragment_maps" >
+
+        <action
+            android:id="@+id/action_app_map_to_locationListFragment"
+            app:destination="@id/locationListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topMenuFragment"
+        android:name="edu.msudenver.cs3013.project03.fragments.TopMenuFragment"
+        android:label="fragment_top_menu"
+        tools:layout="@layout/fragment_top_menu" />
+    <fragment
+        android:id="@+id/app_account"
+        android:name="edu.msudenver.cs3013.project03.fragments.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/locationListFragment"
+        android:name="edu.msudenver.cs3013.project03.fragments.LocationListFragment"
+        android:label="fragment_location_list"
+        tools:layout="@layout/fragment_location_list" >
+        <action
+            android:id="@+id/action_locationListFragment_to_app_map"
+            app:destination="@id/app_map" />
+    </fragment>
+</navigation>

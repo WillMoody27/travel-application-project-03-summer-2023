@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/app_map">
+    <fragment
+        android:id="@+id/app_map"
+        android:name="edu.msudenver.cs3013.project03.MapsFragment"
+        android:label="TRVL | Explore"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/topMenuFragment"
+        android:name="edu.msudenver.cs3013.project03.TopMenuFragment"
+        android:label="fragment_top_menu"
+        tools:layout="@layout/fragment_top_menu" />
+    <fragment
+        android:id="@+id/app_account"
+        android:name="edu.msudenver.cs3013.project03.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/app_explore"
+        android:name="edu.msudenver.cs3013.project03.fragments.TodoFragment"
+        android:label="Explore"
+        tools:layout="@layout/fragment_todo" />
+</navigation>

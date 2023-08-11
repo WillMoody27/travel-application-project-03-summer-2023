@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="red_500">#FF0000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="todo_background">#4CFFBF</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#E6000000</color>
+    <color name="transparent_black_2">#40000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_logo">TRVL</string>
+    <string name="app_name">Project 03</string>
+    <string name="dummy_text_1">Lorem ipsum dolor sit amet</string>
+    <string name="dummy_text_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBMonFrC6Y1jeZjSeScwrxFp6vktxIkHZY</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="weather_string">Denver - 78.6°F</string>
+    <style name="ActionBarStyle" parent="@style/Widget.MaterialComponents.ActionBar.Solid">
+        
+        <item name="elevation">0dp</item>
+    </style>
+    <style name="Base.Theme.Project03" parent="Theme.MaterialComponents.NoActionBar">
+        
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+    <style name="Theme.Project03" parent="Base.Theme.Project03"/>
+    <style name="Theme.Project03.Dark" parent="Base.Theme.Project03">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

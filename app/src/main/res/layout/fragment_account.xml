@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/general_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.AccountFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028">
+
+        <TextView
+            android:id="@+id/dark_mode_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="DARK MODE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@android:id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Enable Dark Mode" />
+
+        <Switch
+            android:id="@+id/switch_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/currency_text_view_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CURRENCY: " />
+            <!--
+            Currencies: US Dollar (USD), Euro (EUR), Pound (GBP), Yen (JPY)
+            -->
+            <RadioGroup
+                android:id="@+id/currency_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--
+                Group the radio buttons together so that only one can
+                be selected at a time.
+                -->
+                <RadioButton
+                    android:id="@+id/currency_radio_button_usd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USD" />
+
+                <RadioButton
+                    android:id="@+id/currency_radio_button_euro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EURO" />
+
+                <RadioButton
+                    android:id="@+id/currency_radio_button_pound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GBP" />
+
+                <RadioButton
+                    android:id="@+id/currency_radio_button_yen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JPY" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
